@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+            <script src="main.js"></script>
+    </head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<body >
+        
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="section">
+        <div class="sidenav">
+            <div class="sidenav-links"><a href="#" class="sidenav-links">To-Do-List</a></div>
+            <div class="sidenav-links"><a href="#" class="sidenav-links">Home</a></div>
+            <div class="sidenav-links"><a href="#" class="sidenav-links">User</a></div>
+            <div class="sidenav-links"><a href="#" class="sidenav-links">Contact Us</a></div>
+            
+        </div>
+    
+        <div class="main">
+            <div id="myDIV" class="search">
+                <h2 style="margin:5px">My To Do List</h2>
+                <input type="text" id="myInput"  class="myInput" onkeyup="dropdownListShow()"  onblur="dropdownListHide()" placeholder="Title..." style="border-radius: 2px;">
+                <div class="dropdown-content">
+                    <ul id="ddlList" style="list-style-type: none;float: left;"></ul>
+                </div>
+                <button onclick="searchList()" class="Btn">Search</button>
+                <button onclick="newElement()" class="Btn">Add</button>
+            </div>
+                      
+            <div id="taskList" style="overflow: auto; max-height: 200px;">
+                <ul id=myUL></ul>
+            </div>
+        </div>                    
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+
+</body>
+</html>
